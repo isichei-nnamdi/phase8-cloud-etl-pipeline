@@ -1,0 +1,28 @@
+# Secrets and credentials: never commit these
+.env
+*.json.key
+*service-account*.json
+application_default_credentials.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Generated outputs
+executive_brief.md
+etl_log.txt
+live_pipeline/cloud_function/etl_to_bigquery.py
+
+# Office lock files and stray copies at the repository root
+~$*
+/*.pptx
+/*.docx
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
